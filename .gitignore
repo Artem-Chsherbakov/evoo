@@ -1,0 +1,24 @@
+# Ignore everything by default
+*
+# Allow directories so Git can traverse
+!*/
+# Keep .git and .gitignore
+!.git/
+!.gitignore
+
+# Track only these file types
+!*.py
+!*.ipynb
+!*.yaml
+!*.yml
+
+# Explicit ignores (data, artifacts, caches)
+*.csv
+*.npy
+checkpoints/
+**/checkpoints/
+__pycache__/
+**/__pycache__/
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+*.txt
